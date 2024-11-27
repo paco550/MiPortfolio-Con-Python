@@ -28,24 +28,24 @@ def links() -> rx.components:
             
         title("comunidad"),
         links_button(
-            "twitch",
-             "de lunes a viernes", 
-             "https://www.twitch.tv/"
+            "GitHub",
+             "Soluciones creativas y código eficiente.", 
+             "https://github.com/paco550"
              ),
         links_button(
-            "Youtube",
-             "tutoriales semanales", 
-             "https://www.youtube.com/"
+            "linkedin",
+             "Impulso proyectos tecnológicos con innovación y eficiencia.", 
+             "https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/"
              ),
-        links_button(
-            "Youtube (secundario)",
-             "kakaka",
-             "https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=8709s"
-             ),
-        links_button(
-            "Discord",
-            "chat comuniti",
-            "https://discord.com/channels/729672926432985098/809090465760149545"
-            ),
+        # links_button(
+        #     "Youtube (secundario)",
+        #      "kakaka",
+        #      "https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=8709s"
+        #      ),
+        # links_button(
+        #     "Discord",
+        #     "chat comuniti",
+        #     "https://discord.com/channels/729672926432985098/809090465760149545"
+        #     ),
             width="100%",
     ),
