@@ -8,17 +8,15 @@ def footer() -> rx.Component:
     return rx.vstack(
         rx.image(src="favicon.ico"),
         rx.link(
-           f"este es el footer {datetime.date.today().year}",
-            href="https://moure.dev/",
+           f"© 2022 - {datetime.date.today().year} Francisco Fernández Bailén. Todos los derechos reservados.",
+            href="https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/",
             is_external=True,
             font_size=size.MEDIUM.value
         ),
-                rx.text("Francisco Fernández Bailén"),
+                rx.text("Hecho con 💻 y ☕ por Francisco Fernández Bailén. Construyendo ideas en la web. "),
+                rx.link("¿Hablamos?", href="mailto: pacofb70@gmail.com", color="blue",underline="hover"),
                 margin_bottom=size.BIG.value,
                 margin_top="0px !important",
                 align="center",
-                       
-
-
         )
     
