@@ -2,6 +2,7 @@ import reflex as rx
 from reflexWebPy.components.link_icon import link_icon
 from reflexWebPy.components.info_text import info_text
 from reflexWebPy.styles.styles import size as size
+from reflexWebPy.styles.colors import TextColor as textcolor
 
 def header() -> rx.components:
     return rx.vstack(
@@ -10,12 +11,16 @@ def header() -> rx.components:
             rx.vstack(
                 rx.heading(
                     "F.Fernández",
-                    size="lg"
+                    size="lg",
+                    color=textcolor.BODY.value,
                     ),
                 rx.text(
                     "@F.Fernández",
-                    margin_top="0px !important"
+                    margin_top="0px !important",
+                    color=textcolor.BODY.value,
+                    spacing=size.MEDIUM.value,
                     ),
+                    
                     rx.hstack(
                     link_icon("https://www.twitch.tv/"),
                     link_icon("https://www.youtube.com/"),
@@ -32,7 +37,8 @@ def header() -> rx.components:
                 info_text("+13", "años de esperiencia"),
                 rx.spacer(),
                 info_text("+13", "años de esperiencia"),
-                width="100%"
+                width="100%",
+                color=textcolor.BODY.value,
             ),
              rx.text(
                  """Soy Francisco Fernández Bailén, desarrollador 
@@ -44,5 +50,8 @@ def header() -> rx.components:
                  innovadoras como reflex.""",
                  spacing=size.BIG.value,
                  align_items="start",
+                 color=textcolor.BODY.value,
                  ),
+                  position="relative",
+                  top="-100px",
     )

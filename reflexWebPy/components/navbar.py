@@ -9,5 +9,5 @@ def navbar() -> rx.components:
         bg="#d6d6d6",
         padding_x=size.DEFAULT.value,
         padding_y=size.SMALL.value,
-        z_index="999"
+        z_index="100",
     )
