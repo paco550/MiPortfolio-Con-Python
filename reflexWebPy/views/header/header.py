@@ -1,5 +1,6 @@
 import reflex as rx
 from reflexWebPy.components.link_icon import link_icon
+from reflexWebPy.components.title import title
 from reflexWebPy.components.info_text import info_text
 from reflexWebPy.styles.styles import size as size
 from reflexWebPy.styles.colors import TextColor as textcolor
@@ -7,13 +8,9 @@ from reflexWebPy.styles.colors import TextColor as textcolor
 def header() -> rx.components:
     return rx.vstack(
         rx.hstack(
-            rx.avatar( name="F.Fernández", fallback="FF", size="xl"),
+            rx.avatar(src="/perfil.ico", radius="full", size="7",  position="relative", top="20px"),
             rx.vstack(
-                rx.heading(
-                    "F.Fernández",
-                    size="lg",
-                    color=textcolor.BODY.value,
-                    ),
+                title("F.Fernández",),
                 rx.text(
                     "@F.Fernández",
                     margin_top="0px !important",
