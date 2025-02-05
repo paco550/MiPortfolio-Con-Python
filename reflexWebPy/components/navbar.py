@@ -3,7 +3,7 @@ from reflexWebPy.styles.styles import size as size
 
 def navbar() -> rx.components:
     return rx.hstack(
-        rx.text("F.Fernández" 
+        rx.text("F.Fernández"
         ),  
         position="stycky",
         bg="#d6d6d6",

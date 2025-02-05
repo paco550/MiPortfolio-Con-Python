@@ -4,11 +4,22 @@ from reflexWebPy.components.title import title
 from reflexWebPy.components.info_text import info_text
 from reflexWebPy.styles.styles import size as size
 from reflexWebPy.styles.colors import TextColor as textcolor
+from reflexWebPy.styles.colors import Color as color
+
 
 def header() -> rx.components:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(src="/perfil.ico", radius="full", size="7",  position="relative", top="20px"),
+            rx.avatar(src="/perfil.ico",
+                       radius="full", 
+                       size="7",  
+                       position="relative", 
+                       top="20px",
+                       padding="2px",
+                       border="4px",
+                       border_color="#14A1F0",
+                       border_style="dotted",
+                       ),
             rx.vstack(
                 title("F.Fernández",),
                 rx.text(

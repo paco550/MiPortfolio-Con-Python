@@ -1,12 +1,12 @@
 import reflex as rx
 import reflexWebPy.styles.styles as styles
 
-def links_button(title:str, body:str, url: str) -> rx.components:
+def links_button(title:str, body:str,  image: str, url: str,) -> rx.components:
     return rx.link(
         rx.button(
             rx.hstack(
-                rx.icon(
-                    tag="arrow-right",
+                rx.image(
+                    src=image,
                     width="2em",
                     height="2em"
                 ),
