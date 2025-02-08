@@ -7,9 +7,11 @@ from .fonts import Font as font
 MAX_WIDTH = "600PX"
 
 class size(Enum):
+    VERY_SMALL = "0.1em"
     SMALL = "0.5em"
     MEDIUM = "0.8EM"
     DEFAULT = "1em"
+    MEDIUM_BIG = "2em"
     BIG = "13em"
 
 # styles
@@ -58,3 +60,9 @@ button_body_style = dict(
     font_size=size.SMALL.value,
     color=TextColor.BODY.value,
 )
+
+tex_animated= {
+    "animation": "fadeIn 2s infinite",
+    "background_clip": "text",
+    "background_image": "linear-gradient(90deg, #f12711, #f5af19, #f5af19, #f12711)",
+}

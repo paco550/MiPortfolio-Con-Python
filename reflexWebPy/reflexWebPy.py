@@ -1,7 +1,7 @@
 
 import reflex as rx
+from reflexWebPy.components.hero_section import hero
 from reflexWebPy.components.navbar import navbar
-from reflexWebPy.components.reflex_text import reflex_text
 from reflexWebPy.views.header.header import header
 from reflexWebPy.views.links.links import links
 from reflexWebPy.components.footer import footer
@@ -13,6 +13,7 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.box(
         navbar(),
+        hero(),
         rx.center(
             rx.vstack(
                 header(),

@@ -4,6 +4,7 @@ from reflexWebPy.components.title import title
 
 def links() -> rx.components:
     return rx.vstack(
+        rx.section(id="proyectos"),
         title("Proyectos"),
         links_button(
             "MiPortfolio-Con-Python",
@@ -30,6 +31,7 @@ def links() -> rx.components:
             "https://github.com/paco550/Chat-backend"
             ),
 
+               rx.section(id="estudios"),
               title("Estudios"),
         links_button(
             "MiPortfolio-Con-Python",
@@ -56,7 +58,8 @@ def links() -> rx.components:
             "https://github.com/paco550/Chat-backend"
             ),
             
-        title("comunidad"),
+             rx.section(id="comunidad"),
+             title("comunidad"),
         links_button(
             "GitHub",
             "Soluciones creativas y código eficiente.", 

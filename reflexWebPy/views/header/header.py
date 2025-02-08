@@ -9,8 +9,9 @@ from reflexWebPy.styles.colors import Color as color
 
 def header() -> rx.components:
     return rx.vstack(
-        rx.hstack(
-            rx.avatar(src="/perfil.ico",
+        rx.hstack( 
+            rx.section(id="header"),
+            rx.avatar( src="/perfil.ico",
                        radius="full", 
                        size="7",  
                        position="relative", 
@@ -30,14 +31,22 @@ def header() -> rx.components:
                     ),
                     
                     rx.hstack(
-                    link_icon("https://www.twitch.tv/"),
-                    link_icon("https://www.youtube.com/"),
-                    link_icon("https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=8709s"),
+                    link_icon(
+                        "icons/file-solid.svg",
+                        "Data/Francisco Fernández Bailén (1).pdf",
+                        ),
+                    link_icon(
+                        "icons/github-brands-solid.svg",
+                        "https://github.com/paco550"
+                        ),
+                    link_icon(
+                        "icons/linkedin-brands-solid.svg",
+                        "https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/"
+                        ),
                      ),
                      width="100%",
                     align_items="start",
             ),
-
             ),
             rx.flex(
                 info_text("+13", "años de esperiencia"),
