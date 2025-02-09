@@ -49,11 +49,16 @@ def header() -> rx.components:
             ),
             ),
             rx.flex(
-                info_text("+13", "años de esperiencia"),
+                info_text("Tecnologias","  "),
                 rx.spacer(),
-                info_text("+13", "años de esperiencia"),
-                rx.spacer(),
-                info_text("+13", "años de esperiencia"),
+                link_icon(
+                    "icons/python-brands-solid.svg",
+                    "https://angular.io/"
+                ),
+                # rx.spacer(),
+                # info_text("+13", "años de esperiencia"),
+                # rx.spacer(),
+                # info_text("+13", "años de esperiencia"),
                 width="100%",
                 color=textcolor.BODY.value,
             ),
@@ -65,10 +70,13 @@ def header() -> rx.components:
                  liderando proyectos, organizando equipos con 
                  herramientas como Trello y trabajando con tecnologías 
                  innovadoras como reflex.""",
-                 spacing=size.BIG.value,
+                 spacing=size.DEFAULT.value,
                  align_items="start",
                  color=textcolor.BODY.value,
                  ),
                   position="relative",
-                  top="-100px",
+                
+                  
+                  
+                   
     )

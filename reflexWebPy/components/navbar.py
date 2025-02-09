@@ -10,7 +10,7 @@ def navbar() -> rx.components:
             rx.spacer(),
             rx.hstack(
                 rx.link("Proyectos", href="#proyectos", padding="1rem"),
-                rx.link("Estudios", href="#estudios", padding="1rem"),
+                # rx.link("Estudios", href="#estudios", padding="1rem"),
                 rx.link("Comunidad", href="#comunidad", padding="1rem"),
             ),
             align_items="center",

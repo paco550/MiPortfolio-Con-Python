@@ -30,33 +30,6 @@ def links() -> rx.components:
             "icons/code-solid.svg",
             "https://github.com/paco550/Chat-backend"
             ),
-
-               rx.section(id="estudios"),
-              title("Estudios"),
-        links_button(
-            "MiPortfolio-Con-Python",
-             "Un portfolio profesional desarrollado con Reflex.", 
-             "icons/github-brands-solid.svg",
-             "https://github.com/paco550/MiPortfolio-Con-Python"
-             ),
-        links_button(
-            "MiFacturacion",
-             "Una aplicación full-stack para gestionar cuentas y finanzas.", 
-             "icons/github-brands-solid.svg",
-             "https://github.com/paco550/MiFacturacion"
-             ),
-        links_button(
-            "devNotes",
-             "una página de documentación creada con Astro para organizar y compartir notas de desarrollo.",
-             "icons/github-brands-solid.svg",
-             "https://devnotess.netlify.app/"
-             ),
-        links_button(
-            "Chat-backend",
-            "Este proyecto es un backend para un sistema de chat en tiempo real.",
-            "icons/github-brands-solid.svg",
-            "https://github.com/paco550/Chat-backend"
-            ),
             
              rx.section(id="comunidad"),
              title("comunidad"),
