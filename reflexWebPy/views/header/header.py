@@ -49,11 +49,55 @@ def header() -> rx.components:
             ),
             ),
             rx.flex(
-                info_text("Tecnologias","  "),
+                info_text(" ","  "),
+                link_icon(
+                    "icon_tec/angular-icon-1.svg",
+                    ""
+                ),
                 rx.spacer(),
                 link_icon(
-                    "icons/python-brands-solid.svg",
-                    "https://angular.io/"
+                    "icon_tec/python-5.svg",
+                    " "
+                ),
+                rx.spacer(),
+                link_icon(
+                    "icon_tec/git (1).svg",
+                    " "
+                ),
+                rx.spacer(),
+                link_icon(
+                    "icon_tec/react-2.svg",
+                    " "
+                ),
+                rx.spacer(),
+                link_icon(
+                    "icon_tec/nodejs-2.svg",
+                    " "
+                ),
+                rx.spacer(),
+                link_icon(
+                    "icon_tec/sqlite.svg",
+                    " "
+                ),
+                rx.spacer(),
+                link_icon(
+                   "icon_tec/logo-javascript.svg",
+                    " "
+                ),
+                  rx.spacer(),
+                link_icon(
+                    "icon_tec/docker.svg",
+                    " "
+                ),
+                   rx.spacer(),
+                link_icon(
+                    "icon_tec/csharp.svg",
+                    " "
+                ),
+                   rx.spacer(),
+                link_icon(
+                    "icon_tec/mongodb-icon-1.svg",
+                    " "
                 ),
                 # rx.spacer(),
                 # info_text("+13", "años de esperiencia"),
@@ -61,18 +105,21 @@ def header() -> rx.components:
                 # info_text("+13", "años de esperiencia"),
                 width="100%",
                 color=textcolor.BODY.value,
+                margin_top="20px",
             ),
              rx.text(
                  """Soy Francisco Fernández Bailén, desarrollador 
-                 web full stack con experiencia en Angular y .NET, y 
-                 conocimientos en diversas tecnologías como Astro, Node.js,
-                 Python, Java y bases de datos. Tengo experiencia 
-                 liderando proyectos, organizando equipos con 
-                 herramientas como Trello y trabajando con tecnologías 
-                 innovadoras como reflex.""",
+                        web full stack con experiencia en Angular y .NET, y 
+                        conocimientos en diversas tecnologías como Astro, Node.js, 
+                        Python, Java y bases de datos. Tengo experiencia 
+                        liderando proyectos, organizando equipos con 
+                        herramientas como Trello y trabajando con tecnologías 
+                        innovadoras como reflex. Cuento con una discapacidad del 33%, 
+                        lo que me permite acceder a incentivos para la contratación.""",
                  spacing=size.DEFAULT.value,
                  align_items="start",
                  color=textcolor.BODY.value,
+                 margin_top="20px",
                  ),
                   position="relative",
                 

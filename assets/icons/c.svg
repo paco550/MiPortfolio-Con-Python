@@ -1,0 +1,5 @@
+<svg width="200" height="200" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" fill="none"/>
+  <polygon fill="white" points="128,12 236,64 236,192 128,244 20,192 20,64" stroke="black" stroke-width="4"/>
+  <text x="50%" y="50%" fill="black" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" dy=".3em">C#</text>
+</svg>

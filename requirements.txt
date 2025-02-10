@@ -1,1 +1,2 @@
-reflex==0.6.5
+black==24.10.0
+reflex-motion==0.0.1
