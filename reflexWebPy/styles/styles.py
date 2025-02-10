@@ -57,7 +57,7 @@ button_title_style = dict(
 )
 
 button_body_style = dict(
-    font_size=size.SMALL.value,
+    font_size=size.MEDIUM.value,
     color=TextColor.BODY.value,
 )
 

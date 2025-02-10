@@ -6,18 +6,16 @@ from reflexWebPy.styles.colors import TextColor as textcolor
 def navbar() -> rx.components:
     return rx.box(
         rx.hstack(
-            rx.link("F. Fernández", href="#inicio", font_size="24px", font_weight="bold"),
+            rx.link("F. Fernández", href="#inicio", font_size="24px", font_weight="bold", color=textcolor.BODY.value,),
             rx.spacer(),
             rx.hstack(
-                rx.link("Proyectos", href="#proyectos", padding="1rem"),
+                rx.link("Proyectos", href="#proyectos", padding="1rem", color=textcolor.BODY.value,),
                 # rx.link("Estudios", href="#estudios", padding="1rem"),
-                rx.link("Comunidad", href="#comunidad", padding="1rem"),
+                rx.link("Comunidad", href="#comunidad", padding="1rem", color=textcolor.BODY.value,),
             ),
             align_items="center",
             padding="1rem",
-            color=textcolor.BODY.value,
         ),
-        color=textcolor.BODY.value,
         position="fixed",
         top="0",
         width="100%",

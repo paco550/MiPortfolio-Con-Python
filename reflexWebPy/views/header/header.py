@@ -34,14 +34,15 @@ def header() -> rx.components:
                     link_icon(
                         "icons/file-solid.svg",
                         "Data/Francisco Fernández Bailén (1).pdf",
+                        text="CV"
                         ),
                     link_icon(
                         "icons/github-brands-solid.svg",
-                        "https://github.com/paco550"
+                        "https://github.com/paco550",
                         ),
                     link_icon(
                         "icons/linkedin-brands-solid.svg",
-                        "https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/"
+                        "https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/", 
                         ),
                      ),
                      width="100%",
@@ -52,7 +53,7 @@ def header() -> rx.components:
                 info_text(" ","  "),
                 link_icon(
                     "icon_tec/angular-icon-1.svg",
-                    ""
+                    " "
                 ),
                 rx.spacer(),
                 link_icon(
