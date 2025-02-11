@@ -1,6 +1,8 @@
 import reflex as rx
 from reflexWebPy.components.animated_text import animated_text
 from reflexWebPy.components.scroll_button import scroll_button
+from reflexWebPy.components.title import title
+from reflexWebPy.styles import styles
 from reflexWebPy.styles.styles import size as size
 
 # Definir el estado para manejar el scroll
@@ -15,8 +17,11 @@ def hero():
     return rx.box(
         rx.section(id="inicio"),
         rx.center(
-            animated_text(),
-            margin_top="250px",),
+            animated_text("hola, soy Francisco Fernández"),
+            # size=size.BIG.value,
+            width="100%",  
+           
+            ),
             
             rx.center(scroll_button(),
                        margin_top="50px"),  # Botón de scroll

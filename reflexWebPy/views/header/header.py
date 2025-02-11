@@ -9,8 +9,12 @@ from reflexWebPy.styles.colors import Color as color
 
 def header() -> rx.components:
     return rx.vstack(
+         rx.box(
+             rx.section(id="header",),
+        height="80px",  # Ajusta esta altura según necesites
+        width="100%"
+    ),
         rx.hstack( 
-            rx.section(id="header"),
             rx.avatar( src="/perfil.ico",
                        radius="full", 
                        size="7",  
@@ -33,8 +37,8 @@ def header() -> rx.components:
                     rx.hstack(
                     link_icon(
                         "icons/file-solid.svg",
-                        "Data/Francisco Fernández Bailén (1).pdf",
-                        text="CV"
+                        "Data/Francisco Fernández Bailén (3).pdf",
+                        text="CV",
                         ),
                     link_icon(
                         "icons/github-brands-solid.svg",

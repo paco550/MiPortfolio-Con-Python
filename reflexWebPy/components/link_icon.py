@@ -11,8 +11,8 @@ def link_icon(image: str, url: str, text: str = "") -> rx.Component:
             ),
             rx.text(text,
                     color=textcolor.BODY.value,
-                    size=size.SMALL.value,
-                    )  # Añadimos el texto debajo de la imagen
+                    size="1",
+                    )
         ),
         href=url,
         is_external=True

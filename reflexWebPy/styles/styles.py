@@ -1,4 +1,5 @@
 from enum import Enum
+from click import style
 import reflex as rx
 from .colors import Color as color, TextColor
 from .fonts import Font as font
@@ -7,6 +8,7 @@ from .fonts import Font as font
 MAX_WIDTH = "600PX"
 
 class size(Enum):
+    VERY="0,0"
     VERY_SMALL = "0.1em"
     SMALL = "0.5em"
     MEDIUM = "0.8EM"
@@ -65,4 +67,19 @@ tex_animated= {
     "animation": "fadeIn 2s infinite",
     "background_clip": "text",
     "background_image": "linear-gradient(90deg, #f12711, #f5af19, #f5af19, #f12711)",
+}
+
+style.title_style = {
+    "@media screen and (max-width: 480px)": {
+        "font_size": "1rem",
+        "padding": "0.5em"
+    },
+    "@media screen and (min-width: 481px) and (max-width: 768px)": {
+        "font_size": "1.2rem",
+        "padding": "1em"
+    },
+    "@media screen and (min-width: 769px)": {
+        "font_size": "1.5rem",
+        "padding": "2em"
+    }
 }
