@@ -31,5 +31,28 @@ def index() -> rx.Component:
 app = rx.App(
     style=styles.BASE_STYLE
 )
-app.add_page(index, title="F.Fernández")
-app._compile()
+
+titulo = "F.Fernández"
+descripcion = "hola soy Francisco Fernández, desarrollador de software"
+imagen = "https://ffernandez.netlify.app"
+
+meta = [
+    {"name": "theme_color", "content": "#FFFFFF"},
+    {"property": "og:type", "content": "website"},
+    {"property": "og:title", "content": titulo},
+    {"property": "og:description", "content": descripcion}, 
+    {"property": "og:image", "content": imagen},
+    {"name": "twitter:card", "content": "summary_large_image"},
+    {"name": "twitter:title", "content": titulo},
+    {"name": "twitter:description", "content": descripcion},
+    {"name": "twitter:image", "content": imagen},
+    {"name": "twitter:site", "content": "@F.Fernandez"}
+]
+
+app.add_page(
+    index,
+    title=titulo,
+    description=descripcion, 
+    image=imagen,
+    meta=meta
+)

@@ -25,10 +25,10 @@ def links() -> rx.components:
              "https://devnotess.netlify.app/"
              ),
         links_button(
-            "Chat-backend",
-            "Este proyecto es un backend para un sistema de chat en tiempo real.",
-            "icons/code-solid.svg",
-            "https://github.com/paco550/Chat-backend"
+            "Pasarela de pago con Stripe",
+            "Implementación de una pasarela de pago segura y eficiente con Stripe, permitiendo procesar transacciones en línea mediante tarjetas de crédito en múltiples divisas.",
+            "icons/python.svg",
+            "https://github.com/paco550/retosDeProgramacion/tree/main/logicaAplicada/pasarela-pago-stripe"
             ),
             
              rx.section(id="comunidad"),
