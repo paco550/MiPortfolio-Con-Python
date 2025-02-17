@@ -2,8 +2,8 @@
 import reflex as rx
 from reflexWebPy.components.hero_section import hero
 from reflexWebPy.components.navbar import navbar
-from reflexWebPy.views.header.header import header
-from reflexWebPy.views.links.links import links
+from reflexWebPy.views.header import header
+from reflexWebPy.views.links import links
 from reflexWebPy.components.footer import footer
 import reflexWebPy.styles.styles as styles
 
