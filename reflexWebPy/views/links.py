@@ -1,6 +1,7 @@
 import reflex as rx
 from reflexWebPy.components.linksButton import links_button
 from reflexWebPy.components.title import title
+from reflexWebPy.rutas import Rutas
 
 def links() -> rx.components:
     return rx.vstack(
@@ -45,16 +46,21 @@ def links() -> rx.components:
              "icons/linkedin-brands-solid.svg",
              "https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/"
              ),
-        # links_button(
-        #     "Youtube (secundario)",
-        #      "kakaka",
-        #      "https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=8709s"
-        #      ),
         links_button(
             "Discord",
             "chat comuniti",
             "icons/discord-brands-solid.svg",
             "https://discord.com/channels/729672926432985098/809090465760149545"
             ),
+
+            rx.section(id="cursos"),
+             title("Cursos"),
+        links_button(
+            "Cursos",
+            "Mis cursos de programacion.", 
+            "icons/code-solid.svg",
+            Rutas.CURSOS.value,
+            is_external=False
+             ),
             width="100%",
     ),

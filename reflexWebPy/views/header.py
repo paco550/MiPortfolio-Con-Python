@@ -37,7 +37,7 @@ def header() -> rx.components:
                     rx.hstack(
                     link_icon(
                         "icons/file-solid.svg",
-                        "Data/Francisco Fernández Bailén (3).pdf",
+                        "Data/Francisco Fernández Bailén (4).pdf",
                         text="CV",
                         ),
                     link_icon(
