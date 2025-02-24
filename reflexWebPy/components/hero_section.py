@@ -3,22 +3,18 @@ from reflexWebPy.components.animated_text import animated_text
 from reflexWebPy.components.scroll_button import scroll_button
 from reflexWebPy.components.title import title
 from reflexWebPy.styles import styles
+from reflexWebPy.styles.colors import TextColor
 from reflexWebPy.styles.styles import size as size
 
 # Definir el estado para manejar el scroll
-class State(rx.State):
-    scroll_position: int = 0
 
-    def update_scroll(self, scroll_pos: int):
-        self.scroll_position = scroll_pos
 
 # Componente Hero
 def hero():
     return rx.box(
         rx.section(id="inicio"),
         rx.center(
-            animated_text("hola, soy Francisco Fernández"),
-            # size=size.BIG.value,
+            animated_text("Hola, soy Francisco Fernández",),
             width="100%",  
            
             ),
@@ -34,7 +30,6 @@ def hero():
         height="100vh",
         # display="flex",
         justify_content="center",
-        opacity=50 - State.scroll_position / 900,  # Ajusta la opacidad según el scroll
         transition="opacity 5s",
 
     )

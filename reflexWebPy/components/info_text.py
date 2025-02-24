@@ -6,7 +6,7 @@ def info_text(title: str, body: str,) -> rx.components:
         rx.text.span(
             title, 
             font_weight="bold",
-            color="blue"
+            # color="blue"
         ),
         f"   {body}", font_size=size.MEDIUM.value,
         

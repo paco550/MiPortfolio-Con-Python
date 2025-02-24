@@ -2,7 +2,6 @@ import reflex as rx
 from reflexWebPy import utils
 from reflexWebPy.components.hero_section import hero
 from reflexWebPy.components.navbar import navbar
-from reflexWebPy.components.pruebas import test
 from reflexWebPy.views.education_section import education_section
 from reflexWebPy.views.header import header
 from reflexWebPy.views.links import links
@@ -27,13 +26,14 @@ def cursos() -> rx.Component:
        
         rx.center(
             rx.vstack(
+                header(),
                  education_section(),
-                 test(),
-                # header(),
+                
                 # links(),
                 max_whith=styles.MAX_WIDTH,
                 width="100%",
-                margin= styles.size.BIG.value,     
+                margin= styles.size.MEDIUM_BIG.value,  
+                margin_top="20px",   
             ),
         ),
        rx.center(footer()),

@@ -1,5 +1,6 @@
 import reflex as rx
 from reflexWebPy import utils
+from reflexWebPy.components.header_text import header_text
 from reflexWebPy.components.hero_section import hero
 from reflexWebPy.components.navbar import navbar
 from reflexWebPy.views.header import header
@@ -22,10 +23,11 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 header(),
+                header_text(),
                 links(),
                 max_whith=styles.MAX_WIDTH,
                 width="100%",
-                margin= styles.size.BIG.value,     
+                margin= styles.size.MEDIUM_BIG.value,     
             ),
         ),
        rx.center(footer()),

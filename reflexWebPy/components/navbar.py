@@ -1,11 +1,13 @@
 import reflex as rx
 from reflexWebPy.styles.styles import size as size
-from reflexWebPy.styles.colors import TextColor as textcolor
+from reflexWebPy.styles.colors import TextColor as TextColor 
 
 
 def navbar_link(text: str, url: str) -> rx.Component:
     return rx.link(
-        rx.text(text, size="4", weight="medium", color=textcolor.BODY.value,), href=url
+        rx.text(text, size="4", weight="medium",), 
+        href=url,
+        _hover={"color": TextColor.TITLE.value },
     )
 
 
@@ -21,7 +23,7 @@ def navbar() -> rx.Component:
                     #     border_radius="25%",
                     # ),
                     rx.heading(
-                        "F.Fernández", size="7", weight="bold"
+                       rx.link( "F.Fernández",href="/#", size="7", weight="bold", _hover={"color": TextColor.TITLE.value },),
                     ),
                     align_items="center",
                 ),
@@ -29,10 +31,11 @@ def navbar() -> rx.Component:
                     navbar_link("Home", "/#"),
                     navbar_link("Proyectos", "/#proyectos",),
                     navbar_link("Comunidad", "/#comunidad",),
-                    # navbar_link("Cursos", "/#cursos",),
+                    navbar_link("Cursos", "/#cursos",),
                     justify="end",
                     spacing="5",
-                    color=textcolor.BODY.value,
+                     _hover={"color": TextColor.TITLE.value },
+                    # color=textcolor.BODY.value,
                 ),
                 justify="between",
                 align_items="center",
@@ -48,20 +51,21 @@ def navbar() -> rx.Component:
                     #     border_radius="25%",
                     # ),
                     rx.heading(
-                        "F.Fernández", size="6", weight="bold"
+                       rx.link( "F.Fernández", href="/#", size="6", weight="bold", _hover={"color": TextColor.TITLE.value },),
                     ),
                     align_items="center",
                 ),
                 rx.menu.root(
                     rx.menu.trigger(
-                        rx.icon("menu", size=30)
+                        rx.icon("menu", size=30,         _hover={"color": TextColor.TITLE.value },
+)
                     ),
                     rx.menu.content(
-                        rx.link("Home", href="/#", color=textcolor.BODY.value,),
-                        rx.link("Proyectos", href="/#proyectos", color=textcolor.BODY.value,),
-                        rx.link("Comunidad", href="/#comunidad", color=textcolor.BODY.value,),
-                        rx.link("Cursos", href="/#cursos", color=textcolor.BODY.value,),
-                       
+                        rx.link("Home", href="/#",_hover={"color": TextColor.TITLE.value },),
+                        rx.link("Proyectos", href="/#proyectos", _hover={"color": TextColor.TITLE.value },),
+                        rx.link("Comunidad", href="/#comunidad",_hover={"color": TextColor.TITLE.value }, ),
+                        rx.link("Cursos", href="/#cursos",_hover={"color": TextColor.TITLE.value },),
+                        
                     ),
                     justify="end",
                 ),
@@ -76,6 +80,6 @@ def navbar() -> rx.Component:
         z_index="10",  # Asegura que se superponga al fondo del hero
         bg="transparent",
         padding="1em",
-        color=textcolor.BODY.value,
+        
         
     )

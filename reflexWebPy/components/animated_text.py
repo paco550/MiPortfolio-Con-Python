@@ -1,5 +1,6 @@
 import reflex as rx
 from reflexWebPy.styles import styles
+from reflexWebPy.styles.colors import TextColor
 from reflexWebPy.styles.styles import size as size
 
 
@@ -10,6 +11,8 @@ def animated_text(text: str):
                 text,
                 size="7",
                 text_align="center",
+                        _hover={"color": TextColor.BODY1.value },
+
                 style=styles.title_style
             ),
             width="100%",
