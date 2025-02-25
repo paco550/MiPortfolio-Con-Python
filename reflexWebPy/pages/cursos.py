@@ -21,9 +21,6 @@ def cursos() -> rx.Component:
     return rx.box(
         utils.lang(),
         navbar(),
-         
-        # hero(),
-       
         rx.center(
             rx.vstack(
                 header(),
