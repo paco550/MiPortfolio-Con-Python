@@ -7,7 +7,7 @@ from reflexWebPy.styles.styles import TextColor as textcolor
 
 def footer() -> rx.Component:
     return rx.vstack(
-        rx.image(src="favicon.ico"),
+        rx.image(src="/favicon.ico"),
         rx.link(
            f"© 2022 - {datetime.date.today().year} Francisco Fernández Bailén. Todos los derechos reservados.",
             href="https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/",

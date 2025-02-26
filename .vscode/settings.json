@@ -1,3 +1,6 @@
 {
-    "black-py.useIntegratedTerminal": false
+    "black-py.useIntegratedTerminal": false,
+    "python.analysis.extraPaths": [
+        "./reflexWebPy/styles"
+    ]
 }

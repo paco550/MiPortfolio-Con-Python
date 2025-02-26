@@ -1,5 +1,6 @@
 import reflex as rx
 from reflexWebPy import utils
+from reflexWebPy.components.ant_components import FloatButton
 from reflexWebPy.components.header_text import header_text
 from reflexWebPy.components.hero_section import hero
 from reflexWebPy.components.navbar import navbar
@@ -25,6 +26,7 @@ def index() -> rx.Component:
                 header(),
                 header_text(),
                 links(),
+                FloatButton(),
                 max_whith=styles.MAX_WIDTH,
                 width="100%",
                 margin= styles.size.MEDIUM_BIG.value,     

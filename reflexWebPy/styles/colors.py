@@ -8,6 +8,7 @@ class Color(Enum):
     CONTENT = "#171F26",
     TD="#5A4EBB",
     TS="#181818",
+    BADGE="#CD5C5C"
 
 class TextColor(Enum):
     HEADER = "#F1F2F4",
