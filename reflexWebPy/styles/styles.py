@@ -20,7 +20,9 @@ class size(Enum):
 
 BASE_STYLE = {
     "font_family": font.DEFAULT.value,
-    "background_color": color.BACKGROUND1.value,
+    "background": "#002266",
+    # "background_image": "url('/Video-de-WhatsApp-2025-03-22-a-las-11.48.12_5071dc18.gif')",
+    "background_size": "cover",
    rx.button: {
        "width": "100%",
        "height": "100%",
@@ -29,7 +31,9 @@ BASE_STYLE = {
        "border_radius": size.DEFAULT.value,
        "color": TextColor.LINK.value,
        "box_shadow": "5px 5px #6A5ACD",
-       "background_color": color.TS.value,
+       "background_color": "#002266",
+        # "background": "linear-gradient(120deg, #003366, #660066, #4a0080, #002266)",
+
        "_hover": {
            "background_color": color.TD.value,
            "box_shadow": "5px 5px #6A5ACD",

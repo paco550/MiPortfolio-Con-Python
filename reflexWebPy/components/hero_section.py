@@ -1,9 +1,6 @@
 import reflex as rx
 from reflexWebPy.components.animated_text import animated_text
 from reflexWebPy.components.scroll_button import scroll_button
-from reflexWebPy.components.title import title
-from reflexWebPy.styles import styles
-from reflexWebPy.styles.colors import TextColor
 from reflexWebPy.styles.styles import size as size
 
 # Definir el estado para manejar el scroll
@@ -23,7 +20,8 @@ def hero():
                        margin_top="50px"),  # Botón de scroll
 
         position="relative",
-        background_image="url('/cafe.jpeg')",
+        # background_image="url('/cafe.jpeg')",
+        background_image="url('/Video-de-WhatsApp-2025-03-22-a-las-11.39.53_925c1c81.gif')",
         background_size="cover",
         background_position="center",
         width="100%",

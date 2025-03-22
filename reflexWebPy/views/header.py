@@ -54,6 +54,7 @@ def header() -> rx.components:
                      width="100%",
                     align_items="start",
             ),
+            
             ),
             rx.flex(
                 info_text(" ","  "),
@@ -113,7 +114,11 @@ def header() -> rx.components:
                 width="100%",
                 color=textcolor.BODY.value,
                 margin_top="20px",
+                
             ),
             width="100%",
-            position="relative",            
+            position="relative", 
+            
+    
+                      
     )

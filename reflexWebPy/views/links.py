@@ -1,4 +1,5 @@
 import reflex as rx
+from reflexWebPy.components.badge_coponent import badges_component
 from reflexWebPy.components.linksButton import links_button
 from reflexWebPy.components.title import title
 from reflexWebPy.rutas import Rutas
@@ -31,7 +32,14 @@ def links() -> rx.components:
             "icons/python.svg",
             "https://github.com/paco550/pasarela-pago-stripe"
             ),
-            
+            rx.box(
+                badges_component(),
+                width="100%",
+                align_items="center",
+                justify_content="center",
+                margin_top="30px",
+                
+            ),
              rx.section(id="comunidad"),
              title("comunidad"),
         links_button(
@@ -62,5 +70,9 @@ def links() -> rx.components:
             Rutas.CURSOS.value,
             is_external=False
              ),
-            width="100%",
-    ),
+             width="100%",
+            
+    )
+           
+
+    
