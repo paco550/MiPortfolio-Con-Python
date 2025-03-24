@@ -1,7 +1,7 @@
 import reflex as rx
 from reflexWebPy.styles.styles import size as size
 from reflexWebPy.styles.colors import TextColor as TextColor 
-from reflexWebPy.components.ant_components import float_button
+# from reflexWebPy.components.ant_components import float_button
 
 def navbar_link(text: str, url: str) -> rx.Component:
     return rx.link(
@@ -26,7 +26,7 @@ def navbar() -> rx.Component:
                     ),
                     align_items="center",
                 ),
-                float_button(),
+                # float_button(),
                 rx.hstack(
                     navbar_link("Home", "/#"),
                     navbar_link("Proyectos", "/#proyectos",),

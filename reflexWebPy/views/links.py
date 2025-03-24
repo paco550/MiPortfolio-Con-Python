@@ -9,11 +9,17 @@ def links() -> rx.components:
         rx.section(id="proyectos"),
         title("Proyectos"),
         links_button(
-            "MiPortfolio-Con-Python",
-             "Un portfolio profesional desarrollado con Reflex.", 
-             "icons/address-card-solid.svg",
-             "https://github.com/paco550/MiPortfolio-Con-Python"
+            "Conecta 4",
+            "Un juego de conecta 4 desarrollado con Reflex.",
+             "icons/python.svg",
+             "https://conecta4-gray-book.reflex.run/"
              ),
+        links_button(
+            "Pasarela de pago con Stripe",
+            "Implementación de una pasarela de pago segura y eficiente con Stripe, permitiendo procesar transacciones en línea mediante tarjetas de crédito en múltiples divisas.",
+            "icons/python.svg",
+            "https://github.com/paco550/pasarela-pago-stripe"
+            ),
         links_button(
             "MiFacturacion",
              "Una aplicación full-stack para gestionar cuentas y finanzas.", 
@@ -25,13 +31,7 @@ def links() -> rx.components:
              "una página de documentación creada con Astro para organizar y compartir notas de desarrollo.",
              "icons/cabeza-gorila.png",
              "https://devnotess.netlify.app/"
-             ),
-        links_button(
-            "Pasarela de pago con Stripe",
-            "Implementación de una pasarela de pago segura y eficiente con Stripe, permitiendo procesar transacciones en línea mediante tarjetas de crédito en múltiples divisas.",
-            "icons/python.svg",
-            "https://github.com/paco550/pasarela-pago-stripe"
-            ),
+             ), 
             rx.box(
                 badges_component(),
                 width="100%",

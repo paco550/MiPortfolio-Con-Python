@@ -4,14 +4,15 @@ from reflexWebPy.styles.styles import TextColor as textcolor
 
 def header_text() -> rx.Component:
     return  rx.text(
-                 """Soy Francisco Fernández Bailén, desarrollador 
-                        web full stack con experiencia en Angular y .NET, y 
-                        conocimientos en diversas tecnologías como Astro, Node.js, 
-                        Python, Java y bases de datos. Tengo experiencia 
-                        liderando proyectos, organizando equipos con 
-                        herramientas como Trello y trabajando con tecnologías 
-                        innovadoras como reflex. Cuento con una discapacidad del 33%, 
-                        lo que me permite acceder a incentivos para la contratación.""",
+                 """Soy Francisco Fernández Bailén, desarrollador backend 
+                 avanzado en Python y frameworks como Django y 
+                 Flask. También tengo conocimientos en otras tecnologías 
+                 como Node.js, .NET, bases de datos SQL y NoSQL, así 
+                 como en arquitectura de APIs y optimización de rendimiento. 
+                 He liderado proyectos, organizado equipos con herramientas 
+                 como Trello y trabajado con tecnologías innovadoras como Reflex. 
+                 Además, cuento con una discapacidad del 33%, lo que 
+                 permite acceder a incentivos para la contratación.""",
                  spacing=size.DEFAULT.value,
                  align_items="start",
                  color=textcolor.BODY1.value,

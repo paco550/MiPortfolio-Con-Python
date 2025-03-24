@@ -10,6 +10,7 @@ def animated_text(text: str):
             rx.text(
                 text,
                 size="7",
+                margin_bottom=size.MEDIUM.value,
                 text_align="center",
                         _hover={"color": TextColor.BODY1.value },
 
