@@ -17,6 +17,13 @@ def header_text() -> rx.Component:
                  align_items="start",
                  color=textcolor.BODY1.value,
                  margin_top="20px",
+                 width="100%",
+                    height="auto",
+                    display="block",
+                    justify="center",
+                    
+                    margin="20px",
+
                  ),
 position="relative",
 

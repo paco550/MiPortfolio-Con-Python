@@ -21,6 +21,12 @@ def links() -> rx.components:
             "https://github.com/paco550/pasarela-pago-stripe"
             ),
         links_button(
+            "Bot de twitter",
+            "Un bot de twitter que publica frases de programación.", 
+             "icons/python.svg",
+             "https://github.com/paco550/bot_twitter"
+             ),
+        links_button(
             "MiFacturacion",
              "Una aplicación full-stack para gestionar cuentas y finanzas.", 
              "icons/code-solid.svg",

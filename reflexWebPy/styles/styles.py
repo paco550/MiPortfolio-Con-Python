@@ -23,11 +23,22 @@ BASE_STYLE = {
     "background": "#002266",
     # "background_image": "url('/Video-de-WhatsApp-2025-03-22-a-las-11.48.12_5071dc18.gif')",
     "background_size": "cover",
+
+"navbar": {
+        "transition": "background-color 0.3s ease",
+        "backdrop_filter": "blur(10px)",
+    },
+
    rx.button: {
        "width": "100%",
-       "height": "100%",
+       "height": "auto",
        "display": "block",
-       "padding": size.SMALL.value,
+       "justify": "center",
+       "align_items": "center",
+       "margin": "20px 20px",
+    
+
+    #    "padding": size.SMALL.value,
        "border_radius": size.DEFAULT.value,
        "color": TextColor.LINK.value,
        "box_shadow": "5px 5px #6A5ACD",
@@ -67,6 +78,8 @@ title_style = dict(
     width="100%",
     padding_top=size.DEFAULT.value,
     color=TextColor.TITLE.value,
+    margin="20px",
+    align_items="center",
 )
 
 button_title_style = dict(
@@ -80,6 +93,7 @@ button_body_style = dict(
     font_size=size.MEDIUM.value,
     color=TextColor.LINK.value,
 )
+
 
 # style.title_style = {
 #     "@media screen and (max-width: 480px)": {

@@ -1,7 +1,7 @@
 import reflex as rx
 from reflexWebPy.styles.styles import size as size
 from reflexWebPy.styles.colors import TextColor as TextColor 
-# from reflexWebPy.components.ant_components import float_button
+from reflexWebPy.styles import styles as styles
 
 def navbar_link(text: str, url: str) -> rx.Component:
     return rx.link(
@@ -74,13 +74,24 @@ def navbar() -> rx.Component:
             ),
             
         ),
-      position="fixed",  # Se posiciona dentro del contenedor hero
-        top="0",
-        left="0",
-        width="100%",
-        z_index="10",  # Asegura que se superponga al fondo del hero
-        bg="transparent",
-        padding="1em",
+
+       
+    position="fixed",
+    top="0",
+    left="0",
+    width="100%",
+    z_index="10",
+    background="linear-gradient(to bottom, rgba(0,0,0,0.5), transparent)",
+    padding="1em",
+    backdrop_filter="blur(10px)",
+
+    #   position="fixed",  # Se posiciona dentro del contenedor hero
+    #     top="0",
+    #     left="0",
+    #     width="100%",
+    #     z_index="10",  # Asegura que se superponga al fondo del hero
+    #     bg="transparent",
+    #     padding="1em",
         
         
     )

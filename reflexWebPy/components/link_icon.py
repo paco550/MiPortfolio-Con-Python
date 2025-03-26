@@ -8,6 +8,8 @@ def link_icon(image: str, url: str,) -> rx.Component:
             rx.image(
                 src=image,
                 width=size.DEFAULT.value,
+                # height=size.MEDIUM.value,
+                margin="5px 10px",
                 
             ),
             

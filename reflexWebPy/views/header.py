@@ -12,8 +12,8 @@ def header() -> rx.components:
     return rx.vstack(
          rx.box(
              rx.section(id="header",),
-         height="80px",  # Ajusta esta altura según necesites
-         width="100%"
+         height="50px",  # Ajusta esta altura según necesites
+         width="auto",
     ),
         rx.hstack( 
             rx.avatar( src="/perfil.ico",
@@ -51,8 +51,12 @@ def header() -> rx.components:
                         "https://www.linkedin.com/in/francisco-fern%C3%A1ndez-bail%C3%A9n/", 
                         ),
                      ),
-                     width="100%",
+                     width="80%",
+                    height="auto",
+                    display="block",
+                    justify="center",
                     align_items="start",
+                    
             ),
             
             ),
@@ -62,47 +66,47 @@ def header() -> rx.components:
                     "/icon_tec/angular-icon-1.svg",
                     " "
                 ),
-                rx.spacer(),
+                # rx.spacer(),
                 link_icon(
                     "/icon_tec/python-5.svg",
                     " "
                 ),
-                rx.spacer(),
+                # rx.spacer(),
                 link_icon(
                     "/icon_tec/git (1).svg",
                     " "
                 ),
-                rx.spacer(),
+                # rx.spacer(),
                 link_icon(
                     "/icon_tec/react-2.svg",
                     " "
                 ),
-                rx.spacer(),
+                # rx.spacer(),
                 link_icon(
                     "/icon_tec/nodejs-2.svg",
                     " "
                 ),
-                rx.spacer(),
+                # rx.spacer(),
                 link_icon(
                     "/icon_tec/sqlite.svg",
                     " "
                 ),
-                rx.spacer(),
+                # rx.spacer(),
                 link_icon(
                    "/icon_tec/logo-javascript.svg",
                     " "
                 ),
-                  rx.spacer(),
+                #   rx.spacer(),
                 link_icon(
                     "/icon_tec/docker.svg",
                     " "
                 ),
-                   rx.spacer(),
+                #    rx.spacer(),
                 link_icon(
                     "/icon_tec/csharp.svg",
                     " "
                 ),
-                   rx.spacer(),
+                #    rx.spacer(),
                 link_icon(
                     "/icon_tec/mongodb-icon-1.svg",
                     " "
@@ -111,13 +115,22 @@ def header() -> rx.components:
                 # info_text("+13", "años de esperiencia"),
                 # rx.spacer(),
                 # info_text("+13", "años de esperiencia"),
-                width="100%",
+                # width="100%",
                 color=textcolor.BODY.value,
                 margin_top="20px",
+                #  width="80%",
+                    # height="auto",
+                    # justify="center",
+                    # align_items="start",
+                    # margin="20px 20px",
                 
             ),
             width="100%",
             position="relative", 
+            height="auto",
+                    justify="center",
+                    align_items="start",
+                    margin="20px",
             
     
                       
