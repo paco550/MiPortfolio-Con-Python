@@ -24,10 +24,15 @@ BASE_STYLE = {
     # "background_image": "url('/Video-de-WhatsApp-2025-03-22-a-las-11.48.12_5071dc18.gif')",
     "background_size": "cover",
 
-"navbar": {
-        "transition": "background-color 0.3s ease",
-        "backdrop_filter": "blur(10px)",
-    },
+
+# "navbar": {
+#         "transition": "background-color 0.3s ease",
+#         "backdrop_filter": "blur(10px)",
+#         "transition": "background-color 0.3s ease",
+#         "_hover": {
+#             "background_color": "rgba(255,255,255,0.9)" 
+#         }
+#     },
 
    rx.button: {
        "width": "100%",

@@ -84,6 +84,7 @@ def navbar() -> rx.Component:
     background="linear-gradient(to bottom, rgba(0,0,0,0.5), transparent)",
     padding="1em",
     backdrop_filter="blur(10px)",
+    
 
     #   position="fixed",  # Se posiciona dentro del contenedor hero
     #     top="0",
