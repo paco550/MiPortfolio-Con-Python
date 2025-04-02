@@ -8,7 +8,7 @@ def lang() -> rx.Component:
     return rx.script("document.documentElement.lang='es'")
 
 
-imagen = "https://ffernandez.netlify.app/cafe.jpeg"
+imagen = "https://ffernandez.netlify.app/Video-de-WhatsApp-2025-03-22-a-las-11.39.53_925c1c81.gif"
 
 meta = [
     {"name": "theme_color", "content": "#FFFFFF"},

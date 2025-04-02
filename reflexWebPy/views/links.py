@@ -9,21 +9,31 @@ def links() -> rx.components:
         rx.section(id="proyectos"),
         title("Proyectos"),
         links_button(
+            "WebWath",
+            "Es una plataforma de monitorización de sitios web "
+            "desarrollada con Django, que rastrea páginas para "
+            "detectar caídas, errores de SEO y cambios en rendimiento. "
+            "Usa Celery para ejecutar tareas asíncronas y Redis como "
+            "broker para gestionar el procesamiento en segundo plano.",
+             "icon_tec/python-5.svg",
+             "https://github.com/paco550/WebWatch/"
+             ),
+        links_button(
             "Conecta 4",
             "Un juego de conecta 4 desarrollado con Reflex.",
-             "icons/python.svg",
+             "icon_tec/python-5.svg",
              "https://conecta4-gray-book.reflex.run/"
              ),
         links_button(
             "Pasarela de pago con Stripe",
             "Implementación de una pasarela de pago segura y eficiente con Stripe, permitiendo procesar transacciones en línea mediante tarjetas de crédito en múltiples divisas.",
-            "icons/python.svg",
+            "icon_tec/python-5.svg",
             "https://github.com/paco550/pasarela-pago-stripe"
             ),
         links_button(
             "Bot de twitter",
             "Un bot de twitter que publica frases de programación.", 
-             "icons/python.svg",
+             "icon_tec/python-5.svg",
              "https://github.com/paco550/bot_twitter"
              ),
         links_button(

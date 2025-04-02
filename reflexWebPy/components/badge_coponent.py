@@ -35,6 +35,17 @@ def badges_component():
                 href="https://www.credly.com/badges/a948315d-6439-4797-95d7-1c7b1cbcc748",
                 is_external=True
             ),
+            rx.link(
+                rx.image(
+                    src="/artificial-intelligence-fundamentals.png",
+                    height="150px",
+                    width="130px",
+                    margin="20px",
+                ),
+                href="https://www.credly.com/badges/31c34f75-66a0-4ffc-ac80-650c9f210c3b/public_url",
+                is_external=True
+            ),
+            
             spacing="4",
             margin="20px",
             height="auto",
